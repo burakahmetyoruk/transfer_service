@@ -8,5 +8,5 @@ This service provides:
     2. Transfer Money from one account to another.
         1. The account could not be overdrawn
         2. System handles the simultaneous transfer request 
-           with using Optimistic Locking
+           with using Java Concurrent Lock feature
 ```
