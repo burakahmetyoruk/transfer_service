@@ -31,19 +31,8 @@ public class Account implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Version
-    private Integer version;
-
     @NotBlank
     private String name;
 
     private BigDecimal balance;
-
-    public void decreaseBalance(BigDecimal amount) {
-        this.balance = this.balance.subtract(amount);
-    }
-
-    public void increaseBalance(BigDecimal transferAmount) {
-        this.balance = this.balance.add(transferAmount);
-    }
 }

@@ -14,6 +14,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class AccountResponse extends BaseResponse {
 
-    @JsonProperty(value = "data")
-    private AccountDto accountDto;
+    @JsonProperty(value = "account_id")
+    private Long id;
+
+    @JsonProperty(value = "account_name")
+    private String name;
 }

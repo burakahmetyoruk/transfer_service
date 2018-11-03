@@ -13,14 +13,14 @@ import java.math.BigDecimal;
 public class TransferRequest {
 
     @NotBlank(message = "TransferrerAccountName must not be empty")
-    @JsonProperty(value = "transferrer-account-name")
+    @JsonProperty(value = "transferrer_account_name")
     private String transferrerAccountName;
 
     @NotBlank(message = "TransferredAccountName must not be empty")
-    @JsonProperty(value = "transferred-account-name")
+    @JsonProperty(value = "transferred_account_name")
     private String transferredAccountName;
 
-    @JsonProperty(value = "transfer-amount")
+    @JsonProperty(value = "transfer_amount")
     @DecimalMin("1")
     private BigDecimal transferAmount;
 }

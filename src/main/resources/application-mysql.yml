@@ -1,0 +1,18 @@
+transfer:
+  service:
+    db:
+      mysql:
+        enabled: true
+spring:
+  jpa:
+    database: MYSQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/transferdb
+    username: root
+    password:

@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 @Getter
 public class AccountRequest {
 
-    @JsonProperty(value = "account-name")
+    @JsonProperty(value = "account_name")
     @NotBlank(message = "Account name must not be empty")
     private String accountName;
 }
